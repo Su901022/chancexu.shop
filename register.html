@@ -5,13 +5,14 @@
 </head>
 
 <body>
-	<from action="action.js" class="login">	
-     <h1>Login 登入</h1>
-	<input type="text" placeholder="Username " />
-	<input type="password" placeholder="password " />
-	<input type="submit" value="提交" />
-		<hr>
-	<input type="member" value="註冊"  />
+	<from action="action.js" class="login">
+	<h1>註冊</h1>
+	<input type="text" placeholder="暱稱 " />
+	<input type="password" placeholder="密碼 " />
+	<input type="sex" placeholder="性別" />	
+	<input type="emil" placeholder="電子郵件" />
+	<input type="birthday" placeholder="生日" />	
+	<input type="submit" value="送出" />
 		</from>
 	
 </body>
@@ -55,32 +56,30 @@
 			color: #f8f9fa;
 			
 			}
-		.login input[type="text"], .login input[type="password"]{
+		.login input[type="text"], .login input[type="password"], .login input[type="birthday"],.login input[type="sex"], .login input[type="emil"]{
 			border: 2px solid 	#EAC100;
 				width: 220px;
 			
 		}
-		.login input[type="submit"],.login input[type="member"]{
-			width: 120px;
+		
+		
+		.login input[type="submit"]{
+			width: 150px;
 			boder: 2px solid #FFD306;
 			cursor: pointer; 
 			
 		}	
 		
-
-		
-		.login input[type="text"]:focus,.login input[type="password"]:focus{
+		.login input[type="text"]:focus,.login input[type="password"]:focus,.login input[type="birthday"]:focus,.login input[type="sex"]:focus,.login input[type="emil"]:focus{
 			border-color: #2ecc71;
 			width: 280px;
 			transition: 0.5s;
 		}
 		
-		.login input[type="submit"]:hover,.login input[type="member"]:hover{
+		.login input[type="submit"]:hover{
 			backface-color: #2ecc71;
 			transition: 0.5s;
 		}	
-		
-
 		
 		
 ::placeholder {
